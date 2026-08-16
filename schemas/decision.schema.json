@@ -1,0 +1,11 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"mwm://headline-ideation/schemas/decision",
+  "title":"Headline project decision","type":"object","additionalProperties":false,
+  "required":["decision_id","hook_id","status","owner","question","answer","recorded_at"],
+  "properties":{
+    "decision_id":{"type":"string"},"hook_id":{"type":"string"},
+    "status":{"enum":["open","resolved","deferred"]},"owner":{"type":"string"},"question":{"type":"string"},
+    "answer":{"type":["string","null"]},"recorded_at":{"type":"string"},"rationale":{"type":"string"}
+  }
+}

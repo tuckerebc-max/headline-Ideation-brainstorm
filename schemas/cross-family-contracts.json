@@ -1,0 +1,14 @@
+{
+  "schema_version":"0.1.0",
+  "family":"Headline Ideation",
+  "consumes":["source_point","audience_purpose_brief","voice_evidence","verified_medium_profile"],
+  "produces":["headline_option_set","headline_finding_ledger","headline_shortlist","open_decision_records"],
+  "does_not_produce":["source_rewrite","full_fact_check","legal_clearance","engagement_guarantee"],
+  "boundary_rules":["Do not alter source text.","Do not assert facts absent from source anchors.","Do not silently resolve platform or style policy.","Downstream presentation may select a headline but must preserve status and provenance."],
+  "optional_inputs_from_other_families":{
+    "style_guide_implementation":["terminology_profile","local_punctuation_profile"],
+    "technical_editing":["protected_technical_terms"],
+    "scholarly_editorial_integrity":["claim_qualification_profile"]
+  },
+  "handoff_fields":["run_id","headline","status","source_anchors","decision_hooks","quality_scores"]
+}

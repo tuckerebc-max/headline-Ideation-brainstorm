@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mwm://headline-ideation/schemas/headline-input",
+  "title": "Headline ideation input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["run_id","source","audience","purpose","genre","medium","target_count","voice","constraints","decision_context"],
+  "properties": {
+    "run_id": {"type":"string","minLength":1},
+    "source": {
+      "type":"object","additionalProperties":false,"required":["provided","summary","anchors"],
+      "properties": {
+        "provided":{"type":"boolean"},
+        "summary":{"type":"string","minLength":1},
+        "anchors":{"type":"array","items":{
+          "type":"object","additionalProperties":false,"required":["anchor_id","text","support_level"],
+          "properties":{
+            "anchor_id":{"type":"string"},"text":{"type":"string"},
+            "support_level":{"enum":["explicit","supported_inference","protected_voice"]}
+          }
+        }}
+      }
+    },
+    "audience": {
+      "type":"object","additionalProperties":false,"required":["primary","intended_action"],
+      "properties":{"primary":{"type":"string"},"secondary":{"type":"array","items":{"type":"string"}},"intended_action":{"type":"string"}}
+    },
+    "purpose":{"type":"string","enum":["inform","explain","persuade","invite","report","teach","entertain","mixed","other"]},
+    "genre":{"type":"string","minLength":1},
+    "medium": {
+      "type":"object","additionalProperties":false,"required":["name","placement","constraint_status"],
+      "properties":{
+        "name":{"type":"string"},"placement":{"type":"string"},
+        "constraint_status":{"enum":["verified","unverified","not_applicable"]},
+        "max_characters":{"type":["integer","null"],"minimum":1},
+        "max_words":{"type":["integer","null"],"minimum":1}
+      }
+    },
+    "target_count":{"type":"integer","minimum":1,"maximum":100},
+    "voice": {
+      "type":"object","additionalProperties":false,"required":["status","signals","excerpts"],
+      "properties":{
+        "status":{"enum":["supplied","partial","unverified","not_applicable"]},
+        "signals":{"type":"array","items":{"type":"string"}},
+        "excerpts":{"type":"array","items":{"type":"string"}}
+      }
+    },
+    "constraints": {
+      "type":"object","additionalProperties":false,"required":["preserve","prohibit","seo","accessibility","localization"],
+      "properties":{
+        "preserve":{"type":"array","items":{"type":"string"}},
+        "prohibit":{"type":"array","items":{"type":"string"}},
+        "seo":{"type":"object","additionalProperties":false,"required":["active","terms"],"properties":{"active":{"type":"boolean"},"terms":{"type":"array","items":{"type":"string"}}}},
+        "accessibility":{"type":"string"},"localization":{"type":"string"}
+      }
+    },
+    "decision_context": {
+      "type":"object","additionalProperties":false,"required":["open_hook_ids","resolved_decisions"],
+      "properties":{"open_hook_ids":{"type":"array","items":{"type":"string"}},"resolved_decisions":{"type":"array","items":{"type":"object"}}}
+    }
+  }
+}

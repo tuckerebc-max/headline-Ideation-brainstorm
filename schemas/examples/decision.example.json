@@ -1,0 +1,10 @@
+{
+  "decision_id": "D-01",
+  "hook_id": "HI-DH-001",
+  "status": "open",
+  "owner": "editor",
+  "question": "What display limit applies?",
+  "answer": null,
+  "recorded_at": "2026-08-14",
+  "rationale": "No verified limit was supplied."
+}

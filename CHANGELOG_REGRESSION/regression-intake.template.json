@@ -1,0 +1,15 @@
+{
+  "regression_id": "REG-YYYYMMDD-001",
+  "reported_at": "YYYY-MM-DD",
+  "source": "human-review",
+  "trigger": "production_failure",
+  "fixture_or_run_id": "HI-XX",
+  "failure_class": "",
+  "observed": "",
+  "expected": "",
+  "severity": "medium",
+  "status": "open",
+  "rule_ids": [],
+  "owner": "",
+  "notes": ""
+}

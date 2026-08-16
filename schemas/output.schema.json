@@ -1,0 +1,22 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"mwm://headline-ideation/schemas/output",
+  "title":"Headline ideation output","type":"object","additionalProperties":false,
+  "required":["run_id","package_version","status","options","shortlist","diversity_audit","ledger","decisions","assumptions"],
+  "properties":{
+    "run_id":{"type":"string"},"package_version":{"type":"string"},
+    "status":{"enum":["ready","ready_with_conditions","needs_input","hold"]},
+    "options":{"type":"array","items":{"$ref":"mwm://headline-ideation/schemas/headline-option"}},
+    "shortlist":{"type":"array","items":{
+      "type":"object","additionalProperties":false,"required":["option_id","rank","why_it_works","tradeoff"],
+      "properties":{"option_id":{"type":"string"},"rank":{"type":"integer","minimum":1},"why_it_works":{"type":"string"},"tradeoff":{"type":"string"},"condition":{"type":"string"}}
+    }},
+    "diversity_audit":{
+      "type":"object","additionalProperties":false,"required":["angle_counts","form_counts","register_counts","specificity_counts","near_duplicate_clusters","unavailable_cells"],
+      "properties":{"angle_counts":{"type":"object"},"form_counts":{"type":"object"},"register_counts":{"type":"object"},"specificity_counts":{"type":"object"},"near_duplicate_clusters":{"type":"array"},"unavailable_cells":{"type":"array"}}
+    },
+    "ledger":{"$ref":"mwm://headline-ideation/schemas/ledger"},
+    "decisions":{"type":"array","items":{"$ref":"mwm://headline-ideation/schemas/decision"}},
+    "assumptions":{"type":"array","items":{"type":"string"}}
+  }
+}

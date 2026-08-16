@@ -1,0 +1,22 @@
+{
+  "run_id": "RUN-EXAMPLE-001",
+  "findings": [
+    {
+      "finding_id": "F-01",
+      "option_id": "OPT-01",
+      "rule_id": "HI-EVAL-001",
+      "severity": "info",
+      "message": "Promise is supported by source anchors.",
+      "evidence": [
+        "S1",
+        "S2"
+      ],
+      "disposition": "accept"
+    }
+  ],
+  "rejected_option_ids": [],
+  "open_hook_ids": [
+    "HI-DH-001"
+  ],
+  "status": "ready_with_conditions"
+}

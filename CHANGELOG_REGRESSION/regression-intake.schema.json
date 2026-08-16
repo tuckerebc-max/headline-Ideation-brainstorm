@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"mwm://headline-ideation/schemas/regression-intake",
+  "title":"Headline regression intake","type":"object","additionalProperties":false,
+  "required":["regression_id","reported_at","source","trigger","fixture_or_run_id","failure_class","observed","expected","severity","status"],
+  "properties":{
+    "regression_id":{"type":"string"},"reported_at":{"type":"string"},"source":{"type":"string"},
+    "trigger":{"enum":["production_failure","human_review","new_guidance","new_medium","fixture_gap","model_change"]},
+    "fixture_or_run_id":{"type":"string"},"failure_class":{"type":"string"},
+    "observed":{"type":"string"},"expected":{"type":"string"},
+    "severity":{"enum":["low","medium","high","critical"]},
+    "status":{"enum":["open","triaged","fixed","deferred","closed"]},
+    "rule_ids":{"type":"array","items":{"type":"string"}},
+    "owner":{"type":"string"},"notes":{"type":"string"}
+  }
+}

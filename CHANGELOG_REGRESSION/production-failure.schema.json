@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"mwm://headline-ideation/schemas/production-failure",
+  "title":"Headline production failure","type":"object","additionalProperties":false,
+  "required":["failure_id","reported_at","run_id","headline","failure_type","impact","severity","containment","status"],
+  "properties":{
+    "failure_id":{"type":"string"},"reported_at":{"type":"string"},"run_id":{"type":"string"},
+    "headline":{"type":"string"},"failure_type":{"enum":["unsupported_claim","deceptive_promise","voice_substitution","false_ready","platform_mismatch","diversity_failure","anti_slop_miss","schema_failure","other"]},
+    "impact":{"type":"string"},"severity":{"enum":["low","medium","high","critical"]},
+    "containment":{"type":"string"},"status":{"enum":["open","contained","corrected","closed"]},
+    "source_anchors":{"type":"array","items":{"type":"string"}},"rule_ids":{"type":"array","items":{"type":"string"}},"regression_id":{"type":"string"}
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "option_id": "OPT-01",
+  "headline": "A Discussion Routine That Made More Room for Quiet Students",
+  "stage": "shortlist",
+  "status": "ready",
+  "tags": {
+    "angle": "reader_utility",
+    "form": "declarative",
+    "register": "plain",
+    "specificity": "concrete",
+    "mechanism": "reader_value"
+  },
+  "source_anchors": [
+    "S1",
+    "S2"
+  ],
+  "length": {
+    "characters": 62,
+    "words": 11,
+    "constraint_status": "unverified"
+  },
+  "scores": {
+    "accuracy_promise": 4,
+    "audience_purpose": 4,
+    "genre_medium": 3,
+    "clarity_scanability": 4,
+    "specificity_value": 4,
+    "voice_fidelity": 4,
+    "distinctiveness": 3,
+    "energy_memorability": 3,
+    "weighted_score": 3.75
+  },
+  "gate": {
+    "passed": true,
+    "failures": []
+  },
+  "anti_slop": [
+    {
+      "check_id": "AS-01",
+      "flagged": false,
+      "reason": "The school routine is named.",
+      "disposition": "none"
+    }
+  ],
+  "disposition": {
+    "reason": "Specific and honest reader promise.",
+    "tradeoff": "Less dramatic than a contrastive option."
+  }
+}

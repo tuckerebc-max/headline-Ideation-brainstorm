@@ -1,0 +1,139 @@
+{
+  "schema_version": "0.1.0",
+  "hook_count": 10,
+  "hooks": [
+    {
+      "id": "HI-DH-001",
+      "question": "What is the verified target length and truncation behavior for this medium and placement?",
+      "owner": "medium_owner",
+      "allowed_values": [
+        "verified_limit",
+        "no_limit",
+        "unknown"
+      ],
+      "status": "open",
+      "blocking_condition": "block release when a limit is asserted but unverified",
+      "record_path": "output.decisions"
+    },
+    {
+      "id": "HI-DH-002",
+      "question": "How should SEO or search terms trade off against natural reader language?",
+      "owner": "project_owner",
+      "allowed_values": [
+        "people_first",
+        "balanced",
+        "search_priority",
+        "not_applicable"
+      ],
+      "status": "open",
+      "blocking_condition": "block when a required term would distort meaning",
+      "record_path": "output.decisions"
+    },
+    {
+      "id": "HI-DH-003",
+      "question": "Is a subtitle available, and how much meaning may it carry?",
+      "owner": "editor",
+      "allowed_values": [
+        "title_only",
+        "title_plus_subtitle",
+        "unknown"
+      ],
+      "status": "open",
+      "blocking_condition": "block when the headline is intentionally vague and no subtitle is available",
+      "record_path": "output.decisions"
+    },
+    {
+      "id": "HI-DH-004",
+      "question": "What rhetorical risk is acceptable for sensitive or high-stakes topics?",
+      "owner": "editor_or_author",
+      "allowed_values": [
+        "conservative",
+        "ordinary",
+        "explicitly_approved_risk",
+        "unknown"
+      ],
+      "status": "open",
+      "blocking_condition": "block high-risk framing until approved",
+      "record_path": "output.decisions"
+    },
+    {
+      "id": "HI-DH-005",
+      "question": "What evidence defines the author's voice for this run?",
+      "owner": "author_or_editor",
+      "allowed_values": [
+        "source_excerpts",
+        "style_profile",
+        "no_voice_evidence"
+      ],
+      "status": "open",
+      "blocking_condition": "block voice release when preservation is required but evidence is absent",
+      "record_path": "output.decisions"
+    },
+    {
+      "id": "HI-DH-006",
+      "question": "What local policy governs questions, imperatives, case, punctuation, and numerals?",
+      "owner": "style_owner",
+      "allowed_values": [
+        "project_style_profile",
+        "medium_default",
+        "open"
+      ],
+      "status": "open",
+      "blocking_condition": "block only when a known conflict exists",
+      "record_path": "output.decisions"
+    },
+    {
+      "id": "HI-DH-007",
+      "question": "Are localization, translation, or cultural-reference constraints active?",
+      "owner": "localization_owner",
+      "allowed_values": [
+        "not_applicable",
+        "localize",
+        "translate",
+        "unknown"
+      ],
+      "status": "open",
+      "blocking_condition": "block release when a line depends on unreviewed wordplay",
+      "record_path": "output.decisions"
+    },
+    {
+      "id": "HI-DH-008",
+      "question": "Are accessibility requirements such as screen-reader clarity or plain-language limits active?",
+      "owner": "accessibility_owner",
+      "allowed_values": [
+        "not_applicable",
+        "active",
+        "unknown"
+      ],
+      "status": "open",
+      "blocking_condition": "block when visual pun or punctuation would impair comprehension",
+      "record_path": "output.decisions"
+    },
+    {
+      "id": "HI-DH-009",
+      "question": "Does the project use separate display and search titles?",
+      "owner": "editor_or_platform_owner",
+      "allowed_values": [
+        "single_title",
+        "separate_titles",
+        "unknown"
+      ],
+      "status": "open",
+      "blocking_condition": "block when one title is forced to satisfy conflicting requirements",
+      "record_path": "output.decisions"
+    },
+    {
+      "id": "HI-DH-010",
+      "question": "Is approximately 25 the requested field size, or should the target change?",
+      "owner": "author_or_editor",
+      "allowed_values": [
+        "25",
+        "custom_count",
+        "smaller_supported_set"
+      ],
+      "status": "open",
+      "blocking_condition": "block only if a count is contractual",
+      "record_path": "output.decisions"
+    }
+  ]
+}

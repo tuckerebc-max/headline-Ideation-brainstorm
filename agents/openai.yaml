@@ -1,0 +1,7 @@
+interface:
+  display_name: "Headline Ideation"
+  short_description: "Rigorous, voice-preserving headline generation and evaluation"
+  default_prompt: "Use $headline-ideation to generate, diversify, screen, and explain approximately 25 headlines for a defined audience, purpose, genre, and medium."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,9 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"mwm://headline-ideation/schemas/run-manifest",
+  "title":"Headline run manifest","type":"object","additionalProperties":false,
+  "required":["run_id","package_version","input_path","output_path","created_at"],
+  "properties":{
+    "run_id":{"type":"string"},"package_version":{"type":"string"},"input_path":{"type":"string"},"output_path":{"type":"string"},"created_at":{"type":"string"},"source_hash":{"type":["string","null"]}
+  }
+}

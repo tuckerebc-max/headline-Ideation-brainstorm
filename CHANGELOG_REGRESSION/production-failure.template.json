@@ -1,0 +1,14 @@
+{
+  "failure_id": "FAIL-YYYYMMDD-001",
+  "reported_at": "YYYY-MM-DD",
+  "run_id": "RUN-0001",
+  "headline": "",
+  "failure_type": "unsupported_claim",
+  "impact": "",
+  "severity": "high",
+  "containment": "Hold publication and replace the released line.",
+  "status": "open",
+  "source_anchors": [],
+  "rule_ids": [],
+  "regression_id": "REG-YYYYMMDD-001"
+}

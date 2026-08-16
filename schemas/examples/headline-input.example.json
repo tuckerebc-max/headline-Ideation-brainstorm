@@ -1,0 +1,68 @@
+{
+  "run_id": "RUN-EXAMPLE-001",
+  "source": {
+    "provided": true,
+    "summary": "A reported essay explains a modest participation improvement after a discussion routine changed.",
+    "anchors": [
+      {
+        "anchor_id": "S1",
+        "text": "The routine was used in one community school.",
+        "support_level": "explicit"
+      },
+      {
+        "anchor_id": "S2",
+        "text": "Participation improved modestly.",
+        "support_level": "explicit"
+      }
+    ]
+  },
+  "audience": {
+    "primary": "district leaders",
+    "secondary": [
+      "school leaders"
+    ],
+    "intended_action": "read and consider the evidence"
+  },
+  "purpose": "inform",
+  "genre": "reported essay",
+  "medium": {
+    "name": "web article",
+    "placement": "main display",
+    "constraint_status": "unverified",
+    "max_characters": null,
+    "max_words": null
+  },
+  "target_count": 25,
+  "voice": {
+    "status": "supplied",
+    "signals": [
+      "plain",
+      "observant",
+      "skeptical of grand claims"
+    ],
+    "excerpts": [
+      "The change was small, but visible."
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      "community school",
+      "modest"
+    ],
+    "prohibit": [
+      "revolutionary"
+    ],
+    "seo": {
+      "active": false,
+      "terms": []
+    },
+    "accessibility": "plain-language preference",
+    "localization": "not applicable"
+  },
+  "decision_context": {
+    "open_hook_ids": [
+      "HI-DH-001"
+    ],
+    "resolved_decisions": []
+  }
+}

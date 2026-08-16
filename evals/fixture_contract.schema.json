@@ -1,0 +1,24 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"mwm://headline-ideation/evals/fixture-contract",
+  "title":"Headline evaluation fixture","type":"object","additionalProperties":false,
+  "required":["fixture_id","synthetic","kind","title","input","gold"],
+  "properties":{
+    "fixture_id":{"type":"string"},"synthetic":{"const":true},
+    "kind":{"enum":["clean","single_error","adversarial","negative_control","integration"]},
+    "title":{"type":"string"},"input":{"type":"object"},"gold":{
+      "type":"object","additionalProperties":false,
+      "required":["expected_release_status","expected_rule_ids","must_not_emit_rule_ids","expected_actions","expected_statuses","required_decision_hooks","expected_routes","zero_tolerance"],
+      "properties":{
+        "expected_release_status":{"enum":["ready","ready_with_conditions","needs_input","hold","reject"]},
+        "expected_rule_ids":{"type":"array","items":{"type":"string"}},
+        "must_not_emit_rule_ids":{"type":"array","items":{"type":"string"}},
+        "expected_actions":{"type":"array","items":{"type":"string"}},
+        "expected_statuses":{"type":"array","items":{"type":"string"}},
+        "required_decision_hooks":{"type":"array","items":{"type":"string"}},
+        "expected_routes":{"type":"array","items":{"type":"string"}},
+        "zero_tolerance":{"type":"boolean"}
+      }
+    }
+  }
+}

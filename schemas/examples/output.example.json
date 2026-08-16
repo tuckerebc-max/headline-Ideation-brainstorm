@@ -1,0 +1,118 @@
+{
+  "run_id": "RUN-EXAMPLE-001",
+  "package_version": "0.1.0",
+  "status": "ready_with_conditions",
+  "options": [
+    {
+      "option_id": "OPT-01",
+      "headline": "A Discussion Routine That Made More Room for Quiet Students",
+      "stage": "shortlist",
+      "status": "ready",
+      "tags": {
+        "angle": "reader_utility",
+        "form": "declarative",
+        "register": "plain",
+        "specificity": "concrete",
+        "mechanism": "reader_value"
+      },
+      "source_anchors": [
+        "S1",
+        "S2"
+      ],
+      "length": {
+        "characters": 62,
+        "words": 11,
+        "constraint_status": "unverified"
+      },
+      "scores": {
+        "accuracy_promise": 4,
+        "audience_purpose": 4,
+        "genre_medium": 3,
+        "clarity_scanability": 4,
+        "specificity_value": 4,
+        "voice_fidelity": 4,
+        "distinctiveness": 3,
+        "energy_memorability": 3,
+        "weighted_score": 3.75
+      },
+      "gate": {
+        "passed": true,
+        "failures": []
+      },
+      "anti_slop": [
+        {
+          "check_id": "AS-01",
+          "flagged": false,
+          "reason": "The school routine is named.",
+          "disposition": "none"
+        }
+      ],
+      "disposition": {
+        "reason": "Specific and honest reader promise.",
+        "tradeoff": "Less dramatic than a contrastive option."
+      }
+    }
+  ],
+  "shortlist": [
+    {
+      "option_id": "OPT-01",
+      "rank": 1,
+      "why_it_works": "It names the concrete routine and reader value without inflating the evidence.",
+      "tradeoff": "It is explanatory rather than highly playful.",
+      "condition": "Confirm the medium limit."
+    }
+  ],
+  "diversity_audit": {
+    "angle_counts": {
+      "reader_utility": 1
+    },
+    "form_counts": {
+      "declarative": 1
+    },
+    "register_counts": {
+      "plain": 1
+    },
+    "specificity_counts": {
+      "concrete": 1
+    },
+    "near_duplicate_clusters": [],
+    "unavailable_cells": []
+  },
+  "ledger": {
+    "run_id": "RUN-EXAMPLE-001",
+    "findings": [
+      {
+        "finding_id": "F-01",
+        "option_id": "OPT-01",
+        "rule_id": "HI-EVAL-001",
+        "severity": "info",
+        "message": "Promise is supported by source anchors.",
+        "evidence": [
+          "S1",
+          "S2"
+        ],
+        "disposition": "accept"
+      }
+    ],
+    "rejected_option_ids": [],
+    "open_hook_ids": [
+      "HI-DH-001"
+    ],
+    "status": "ready_with_conditions"
+  },
+  "decisions": [
+    {
+      "decision_id": "D-01",
+      "hook_id": "HI-DH-001",
+      "status": "open",
+      "owner": "editor",
+      "question": "What display limit applies?",
+      "answer": null,
+      "recorded_at": "2026-08-14",
+      "rationale": "No verified limit was supplied."
+    }
+  ],
+  "assumptions": [
+    "Medium length is unverified."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "run_id": "RUN-EXAMPLE-001",
+  "package_version": "0.1.0",
+  "input_path": "schemas/examples/headline-input.example.json",
+  "output_path": "schemas/examples/output.example.json",
+  "created_at": "2026-08-14",
+  "source_hash": null
+}

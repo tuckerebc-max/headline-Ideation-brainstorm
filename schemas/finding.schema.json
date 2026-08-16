@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"mwm://headline-ideation/schemas/finding",
+  "title":"Headline finding","type":"object","additionalProperties":false,
+  "required":["finding_id","option_id","rule_id","severity","message","evidence","disposition"],
+  "properties":{
+    "finding_id":{"type":"string"},"option_id":{"type":"string"},"rule_id":{"type":"string"},
+    "severity":{"enum":["info","low","medium","high","critical"]},
+    "message":{"type":"string","minLength":1},"evidence":{"type":"array","items":{"type":"string"}},
+    "disposition":{"enum":["accept","repair","reject","escalate","not_applicable"]}
+  }
+}

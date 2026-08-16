@@ -1,0 +1,376 @@
+{
+  "schema_version": "0.1.0",
+  "registry_id": "MWM-WRITING-HEADLINE-RULES",
+  "version": "0.1.0",
+  "status": "draft-for-editorial-review",
+  "precedence": [
+    "source_point",
+    "project_decision",
+    "verified_medium_profile",
+    "external_guidance",
+    "skill_default",
+    "model_judgment"
+  ],
+  "rules": [
+    {
+      "id": "HI-INPUT-001",
+      "category": "input",
+      "statement": "The brief identifies source point, audience, purpose, genre, and medium before release.",
+      "default_action": "needs_input if a required field is missing",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-INPUT-002",
+      "category": "input",
+      "statement": "Every released option is traceable to an explicit or supported source anchor.",
+      "default_action": "reject unsupported assertion",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-INPUT-003",
+      "category": "input",
+      "statement": "Voice evidence and protected diction are recorded when voice preservation is requested.",
+      "default_action": "request samples or mark voice unverified",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-INPUT-004",
+      "category": "input",
+      "statement": "Platform and display limits are supplied, verified, or explicitly marked unverified.",
+      "default_action": "route to HI-DH-001",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-GEN-001",
+      "category": "generation",
+      "statement": "The default target is approximately 25 options, subject to an honest smaller-set exception.",
+      "default_action": "generate field and record count rationale",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-GEN-002",
+      "category": "generation",
+      "statement": "Raw ideation is separated from screening and selection.",
+      "default_action": "retain raw field",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-GEN-003",
+      "category": "generation",
+      "statement": "Options vary by meaningful editorial angle, not synonym substitution.",
+      "default_action": "expand supported angle coverage",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-GEN-004",
+      "category": "generation",
+      "statement": "Options vary by form when the source and brief permit it.",
+      "default_action": "report unavailable forms instead of forcing them",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-GEN-005",
+      "category": "generation",
+      "statement": "Each option is tagged with angle, form, register, specificity, and mechanism.",
+      "default_action": "return needs_input for missing metadata",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-EVAL-001",
+      "category": "evaluation",
+      "statement": "Accuracy and promise fit are evaluated against the source point and qualifiers.",
+      "default_action": "fail critical gate",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-EVAL-002",
+      "category": "evaluation",
+      "statement": "The headline does not promise information, causation, scale, or certainty the work does not deliver.",
+      "default_action": "fail critical gate",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-EVAL-003",
+      "category": "evaluation",
+      "statement": "The option serves the identified audience and intended action.",
+      "default_action": "fail critical gate",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-EVAL-004",
+      "category": "evaluation",
+      "statement": "The option fits the stated genre.",
+      "default_action": "fail critical gate",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-EVAL-005",
+      "category": "evaluation",
+      "statement": "The option fits the medium and verified placement constraints.",
+      "default_action": "fail or route to hook",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-EVAL-006",
+      "category": "evaluation",
+      "statement": "The option preserves supplied author voice signals and protected terms.",
+      "default_action": "fail critical gate when voice evidence exists",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-EVAL-007",
+      "category": "evaluation",
+      "statement": "The option is clear and scanable without erasing necessary meaning.",
+      "default_action": "revise or reject",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-EVAL-008",
+      "category": "evaluation",
+      "statement": "The option offers a specific reader reason to care.",
+      "default_action": "revise generic abstraction",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-SLOP-001",
+      "category": "anti_slop",
+      "statement": "Generic abstraction is flagged when it could title many unrelated works.",
+      "default_action": "replace with source detail or payoff",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-SLOP-002",
+      "category": "anti_slop",
+      "statement": "Formulaic or templated phrasing is flagged when the payload is not source-specific.",
+      "default_action": "repair or reject",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-SLOP-003",
+      "category": "anti_slop",
+      "statement": "Inflated certainty, hype, superlatives, and false urgency require evidence.",
+      "default_action": "restore qualifier or reject",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-SLOP-004",
+      "category": "anti_slop",
+      "statement": "Curiosity must not depend on a deceptive information gap.",
+      "default_action": "name enough context or reject",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-SLOP-005",
+      "category": "anti_slop",
+      "statement": "Keyword use must remain natural and must not distort human meaning.",
+      "default_action": "route SEO tradeoff or revise",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-SLOP-006",
+      "category": "anti_slop",
+      "statement": "Canned AI vocabulary and corporate uplift are screened in context, not by mechanical banned words.",
+      "default_action": "restore voice and specificity",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-DIV-001",
+      "category": "diversity",
+      "statement": "The result reports coverage by angle, form, register, specificity, anchors, and duplicate clusters.",
+      "default_action": "return diversity audit",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-DIV-002",
+      "category": "diversity",
+      "statement": "Near-duplicates are clustered and the stronger representative is retained.",
+      "default_action": "record rejected_duplicate",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-SEL-001",
+      "category": "selection",
+      "statement": "A critical gate failure cannot be rescued by aggregate score.",
+      "default_action": "set reject or hold",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-SEL-002",
+      "category": "selection",
+      "statement": "A shortlist contains 3-5 options or records the requested exception and tradeoffs.",
+      "default_action": "return rationale for each finalist",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-SEL-003",
+      "category": "selection",
+      "statement": "Rejected options and reasons remain in the ledger.",
+      "default_action": "retain rejection ledger",
+      "critical_gate": false,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-OUT-001",
+      "category": "output",
+      "statement": "The output validates against the declared schema and includes status, options, audit, shortlist, and decisions.",
+      "default_action": "return hold on contract failure",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    },
+    {
+      "id": "HI-OUT-002",
+      "category": "output",
+      "statement": "Unknowns, assumptions, and open project decisions are disclosed rather than silently resolved.",
+      "default_action": "route to decision hook",
+      "critical_gate": true,
+      "evidence_required": [
+        "brief",
+        "source_anchor",
+        "option_record"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "schema_version": "0.1.0",
+  "rows": [
+    {
+      "rule_id": "HI-INPUT-001",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-07"
+      ],
+      "adversarial": [
+        "HI-17"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-INPUT-002",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-08"
+      ],
+      "adversarial": [
+        "HI-18"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-INPUT-003",
+      "positive": [
+        "HI-02"
+      ],
+      "negative": [
+        "HI-12"
+      ],
+      "adversarial": [
+        "HI-20"
+      ],
+      "integration": [
+        "HI-28"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-INPUT-004",
+      "positive": [
+        "HI-03"
+      ],
+      "negative": [
+        "HI-11"
+      ],
+      "adversarial": [
+        "HI-21"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-GEN-001",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-13"
+      ],
+      "adversarial": [
+        "HI-19"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-GEN-002",
+      "positive": [
+        "HI-05"
+      ],
+      "negative": [
+        "HI-16"
+      ],
+      "adversarial": [
+        "HI-19"
+      ],
+      "integration": [
+        "HI-28"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-GEN-003",
+      "positive": [
+        "HI-05"
+      ],
+      "negative": [
+        "HI-13"
+      ],
+      "adversarial": [
+        "HI-22"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-GEN-004",
+      "positive": [
+        "HI-05"
+      ],
+      "negative": [
+        "HI-13"
+      ],
+      "adversarial": [
+        "HI-22"
+      ],
+      "integration": [
+        "HI-28"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-GEN-005",
+      "positive": [
+        "HI-05"
+      ],
+      "negative": [
+        "HI-05"
+      ],
+      "adversarial": [
+        "HI-19"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-EVAL-001",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-08"
+      ],
+      "adversarial": [
+        "HI-18"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-EVAL-002",
+      "positive": [
+        "HI-04"
+      ],
+      "negative": [
+        "HI-08"
+      ],
+      "adversarial": [
+        "HI-17"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-EVAL-003",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-09"
+      ],
+      "adversarial": [
+        "HI-20"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-EVAL-004",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-10"
+      ],
+      "adversarial": [
+        "HI-20"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-EVAL-005",
+      "positive": [
+        "HI-03"
+      ],
+      "negative": [
+        "HI-11"
+      ],
+      "adversarial": [
+        "HI-21"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-EVAL-006",
+      "positive": [
+        "HI-02"
+      ],
+      "negative": [
+        "HI-12"
+      ],
+      "adversarial": [
+        "HI-20"
+      ],
+      "integration": [
+        "HI-28"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-EVAL-007",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-21"
+      ],
+      "adversarial": [
+        "HI-21"
+      ],
+      "integration": [
+        "HI-29"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-EVAL-008",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-14"
+      ],
+      "adversarial": [
+        "HI-22"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-SLOP-001",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-14"
+      ],
+      "adversarial": [
+        "HI-19"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-SLOP-002",
+      "positive": [
+        "HI-05"
+      ],
+      "negative": [
+        "HI-14"
+      ],
+      "adversarial": [
+        "HI-19"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-SLOP-003",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-18"
+      ],
+      "adversarial": [
+        "HI-18"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-SLOP-004",
+      "positive": [
+        "HI-04"
+      ],
+      "negative": [
+        "HI-17"
+      ],
+      "adversarial": [
+        "HI-17"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-SLOP-005",
+      "positive": [
+        "HI-03"
+      ],
+      "negative": [
+        "HI-15"
+      ],
+      "adversarial": [
+        "HI-21"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-SLOP-006",
+      "positive": [
+        "HI-06"
+      ],
+      "negative": [
+        "HI-19"
+      ],
+      "adversarial": [
+        "HI-19"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-DIV-001",
+      "positive": [
+        "HI-05"
+      ],
+      "negative": [
+        "HI-13"
+      ],
+      "adversarial": [
+        "HI-20"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-DIV-002",
+      "positive": [
+        "HI-16"
+      ],
+      "negative": [
+        "HI-13"
+      ],
+      "adversarial": [
+        "HI-22"
+      ],
+      "integration": [
+        "HI-28"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-SEL-001",
+      "positive": [
+        "HI-08"
+      ],
+      "negative": [
+        "HI-08"
+      ],
+      "adversarial": [
+        "HI-18"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-SEL-002",
+      "positive": [
+        "HI-02"
+      ],
+      "negative": [
+        "HI-12"
+      ],
+      "adversarial": [
+        "HI-20"
+      ],
+      "integration": [
+        "HI-28"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-SEL-003",
+      "positive": [
+        "HI-16"
+      ],
+      "negative": [
+        "HI-16"
+      ],
+      "adversarial": [
+        "HI-17"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-OUT-001",
+      "positive": [
+        "HI-01"
+      ],
+      "negative": [
+        "HI-07"
+      ],
+      "adversarial": [
+        "HI-18"
+      ],
+      "integration": [
+        "HI-27"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    },
+    {
+      "rule_id": "HI-OUT-002",
+      "positive": [
+        "HI-07"
+      ],
+      "negative": [
+        "HI-07"
+      ],
+      "adversarial": [
+        "HI-22"
+      ],
+      "integration": [
+        "HI-29"
+      ],
+      "rationale": "The fixture demonstrates how this rule behaves under a supported, deficient, adversarial, and integrated brief."
+    }
+  ]
+}

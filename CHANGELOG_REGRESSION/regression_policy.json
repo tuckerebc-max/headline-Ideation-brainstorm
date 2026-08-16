@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "principles": [
+    "Capture every production failure with the offending headline and source evidence.",
+    "Classify before repairing; do not edit the original incident record.",
+    "Add a regression fixture when the failure exposes a reusable decision rule.",
+    "Do not close a critical failure until the zero-tolerance suite passes and a human reviews the fix.",
+    "Keep unresolved policy decisions open rather than encoding a silent workaround."
+  ],
+  "failure_classes": [
+    "unsupported_claim",
+    "deceptive_promise",
+    "voice_substitution",
+    "false_ready",
+    "platform_mismatch",
+    "diversity_failure",
+    "anti_slop_miss",
+    "schema_failure",
+    "other"
+  ],
+  "required_review": [
+    "source fidelity",
+    "decision hook disposition",
+    "fixture or rationale for no fixture",
+    "zero-tolerance impact"
+  ],
+  "release_rule": "A critical production failure blocks release until contained, corrected, and represented in regression evidence."
+}

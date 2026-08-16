@@ -1,0 +1,60 @@
+{
+    "package_id":  "MWM-WRITING-HEADLINE",
+    "family":  "Headline Ideation",
+    "package_version":  "0.1.0",
+    "status":  "draft-for-editorial-review",
+    "skill_entry":  "SKILL.md",
+    "components":  {
+                       "specification":  "01_SPECIFICATION.md",
+                       "rules":  "RULES/",
+                       "skill":  "SKILL.md",
+                       "schemas":  "schemas/",
+                       "evals":  "evals/",
+                       "changelog_regression":  "CHANGELOG_REGRESSION/",
+                       "agent_interface":  "agents/openai.yaml",
+                       "schema_examples":  "schemas/examples/"
+                   },
+    "rules":  {
+                  "registry":  "RULES/ruleset.json",
+                  "decision_hooks":  "RULES/decision_hooks.json",
+                  "version":  "0.1.0",
+                  "rule_count":  30,
+                  "decision_hook_count":  10
+              },
+    "references":  [
+                       "references/generation-procedure.md",
+                       "references/quality-rubric.md",
+                       "references/diversity-matrix.md",
+                       "references/anti-slop-checklist.md",
+                       "references/examples.md",
+                       "references/research-basis.md"
+                   ],
+    "evaluation":  {
+                       "catalog":  "evals/fixture_catalog.json",
+                       "crosswalk":  "evals/rule_fixture_crosswalk.json",
+                       "scorer":  "evals/scorer.py",
+                       "fixture_count":  30,
+                       "classes":  [
+                                       "clean",
+                                       "single_error",
+                                       "adversarial",
+                                       "negative_control",
+                                       "integration"
+                                   ]
+                   },
+    "qa":  {
+               "validator":  "scripts/validate_package.py",
+               "commands":  [
+                                "python scripts/validate_package.py",
+                                "python scripts/validate_schemas.py",
+                                "python evals/scorer.py --validate-suite --self-test",
+                                "python -m py_compile scripts/validate_package.py scripts/validate_schemas.py evals/scorer.py"
+                            ],
+               "zero_tolerance":  "No unsupported factual claim, deceptive promise, silent voice replacement, false ready status, or unexplained platform constraint."
+           },
+    "runtime":  {
+                    "network_required":  false,
+                    "external_data":  "Optional only; any externally supplied claims must be attributed and verified.",
+                    "unresolved_policy":  "Open choices are represented as decision hooks, not defaults."
+                }
+}

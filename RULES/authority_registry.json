@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "authority_id": "MWM-WRITING-HEADLINE-AUTHORITY",
+  "precedence": [
+    "source_point",
+    "project_decision",
+    "verified_medium_profile",
+    "external_guidance",
+    "skill_default",
+    "model_judgment"
+  ],
+  "layers": [
+    {
+      "layer": "source_point",
+      "role": "claims, scope, qualifiers, names, and voice evidence",
+      "required": true
+    },
+    {
+      "layer": "project_decision",
+      "role": "approved local policies and decision-hook resolutions",
+      "required": false
+    },
+    {
+      "layer": "verified_medium_profile",
+      "role": "current placement constraints supplied by project owner",
+      "required": false
+    },
+    {
+      "layer": "external_guidance",
+      "role": "research-backed general principles with provenance",
+      "required": false
+    },
+    {
+      "layer": "skill_default",
+      "role": "versioned procedure and default rubric",
+      "required": true
+    },
+    {
+      "layer": "model_judgment",
+      "role": "candidate generation and explanatory judgment",
+      "required": false
+    }
+  ],
+  "boundary": "A lower layer cannot silently override a higher layer; unresolved decisions remain open."
+}

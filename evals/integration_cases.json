@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "cases": [
+    {
+      "fixture_id": "HI-27",
+      "path": [
+        "input_lock",
+        "source_fidelity",
+        "medium_and_seo_hooks",
+        "anti_slop",
+        "rubric",
+        "shortlist",
+        "output"
+      ],
+      "required_contracts": [
+        "headline-input",
+        "headline-option",
+        "ledger",
+        "decision",
+        "output"
+      ]
+    },
+    {
+      "fixture_id": "HI-28",
+      "path": [
+        "voice_lock",
+        "field_generation",
+        "unknown_length_hook",
+        "selection"
+      ],
+      "required_contracts": [
+        "headline-input",
+        "headline-option",
+        "decision",
+        "output"
+      ]
+    },
+    {
+      "fixture_id": "HI-29",
+      "path": [
+        "localization_hook",
+        "accessibility_hook",
+        "hold"
+      ],
+      "required_contracts": [
+        "headline-input",
+        "decision",
+        "output"
+      ]
+    },
+    {
+      "fixture_id": "HI-30",
+      "path": [
+        "protected_term_handoff",
+        "voice_and_clarity",
+        "release"
+      ],
+      "required_contracts": [
+        "headline-input",
+        "headline-option",
+        "output"
+      ]
+    }
+  ]
+}

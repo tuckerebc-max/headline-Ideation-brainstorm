@@ -1,0 +1,1325 @@
+{
+    "evaluation_set_id":  "MWM-HEADLINE-EVAL-0.1.0",
+    "version":  "0.1.0",
+    "fixture_counts":  {
+                           "clean":  6,
+                           "single_error":  10,
+                           "adversarial":  6,
+                           "negative_control":  4,
+                           "integration":  4
+                       },
+    "fixtures":  [
+                     {
+                         "fixture_id":  "HI-01",
+                         "synthetic":  true,
+                         "kind":  "clean",
+                         "title":  "Clear supported report",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-001",
+                                                                "HI-INPUT-002",
+                                                                "HI-GEN-001",
+                                                                "HI-EVAL-001",
+                                                                "HI-EVAL-003",
+                                                                "HI-EVAL-004",
+                                                                "HI-EVAL-007",
+                                                                "HI-EVAL-008",
+                                                                "HI-DIV-001",
+                                                                "HI-OUT-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "release",
+                                                               "shortlist"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-02",
+                         "synthetic":  true,
+                         "kind":  "clean",
+                         "title":  "Voice-preserving practical title",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "direct, dry, slightly funny",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-003",
+                                                                "HI-EVAL-006",
+                                                                "HI-SEL-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "preserve_voice",
+                                                               "shortlist"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-03",
+                         "synthetic":  true,
+                         "kind":  "clean",
+                         "title":  "Verified web placement",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article (verified display limit 72 characters)",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-004",
+                                                                "HI-EVAL-005"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "verify_length",
+                                                               "release"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-04",
+                         "synthetic":  true,
+                         "kind":  "clean",
+                         "title":  "Honest question headline",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "explain",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-EVAL-001",
+                                                                "HI-EVAL-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "retain_honest_curiosity"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-05",
+                         "synthetic":  true,
+                         "kind":  "clean",
+                         "title":  "Diverse option field",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "mixed",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-GEN-002",
+                                                                "HI-GEN-003",
+                                                                "HI-GEN-004",
+                                                                "HI-GEN-005",
+                                                                "HI-DIV-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "audit_diversity"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-06",
+                         "synthetic":  true,
+                         "kind":  "clean",
+                         "title":  "Protected quoted phrase",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "uses a supplied quoted phrase exactly",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-003",
+                                                                "HI-EVAL-006",
+                                                                "HI-SLOP-006"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "protect_phrase"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-07",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Source point missing",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "source_provided":  false
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "needs_input",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-001",
+                                                                "HI-OUT-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "request_source"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "needs_input"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-08",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Unsupported causal claim",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "source_summary":  "Evidence is correlational and does not establish causation."
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-002",
+                                                                "HI-EVAL-001",
+                                                                "HI-EVAL-002",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  true
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-09",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Wrong audience",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "preschool parents",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-EVAL-003",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-10",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Wrong genre",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "breaking news headline",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-EVAL-004",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-11",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Unverified platform length",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "social post; platform limit not supplied",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "hold",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-004",
+                                                                "HI-EVAL-005",
+                                                                "HI-OUT-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "escalate"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "hold"
+                                                            ],
+                                      "required_decision_hooks":  [
+                                                                      "HI-DH-001"
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-12",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Voice replacement",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "author uses regional idiom and first-person humor",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-003",
+                                                                "HI-EVAL-006",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+                                                                      "HI-DH-005"
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  true
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-13",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Honest smaller set",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "target_count":  25,
+                                       "source_summary":  "A narrow one-page memo has only three distinct supported angles."
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready_with_conditions",
+                                      "expected_rule_ids":  [
+                                                                "HI-GEN-001",
+                                                                "HI-GEN-003",
+                                                                "HI-DIV-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reduce_count",
+                                                               "record_hook"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready_with_conditions"
+                                                            ],
+                                      "required_decision_hooks":  [
+                                                                      "HI-DH-010"
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-14",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Generic formula",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "headline_candidate":  "The Future of Unlocking Transformative Change"
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-SLOP-001",
+                                                                "HI-SLOP-002",
+                                                                "HI-SLOP-006",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-15",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Keyword stuffing",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "search landing page",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "seo_terms":  [
+                                                         "community school",
+                                                         "community school",
+                                                         "school discussion",
+                                                         "community school"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-SLOP-005",
+                                                                "HI-OUT-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+                                                                      "HI-DH-002"
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-16",
+                         "synthetic":  true,
+                         "kind":  "single_error",
+                         "title":  "Near duplicate field",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "duplicate_options":  true
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-GEN-003",
+                                                                "HI-DIV-002",
+                                                                "HI-SEL-003"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "deduplicate"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-17",
+                         "synthetic":  true,
+                         "kind":  "adversarial",
+                         "title":  "You will not believe what happened next",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "headline_candidate":  "You Will Not Believe What Happened Next",
+                                       "source_summary":  "The essay reports a routine discussion change."
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-SLOP-004",
+                                                                "HI-EVAL-002",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  true
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-18",
+                         "synthetic":  true,
+                         "kind":  "adversarial",
+                         "title":  "Revolutionary result overclaim",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "headline_candidate":  "A Revolutionary Method Transformed Every Classroom",
+                                       "source_summary":  "The evidence supports a modest participation improvement."
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-SLOP-003",
+                                                                "HI-EVAL-001",
+                                                                "HI-EVAL-002",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  true
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-19",
+                         "synthetic":  true,
+                         "kind":  "adversarial",
+                         "title":  "Canned AI promise",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "headline_candidate":  "The Future of Unlocking a New Era of Student Voice"
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-SLOP-001",
+                                                                "HI-SLOP-002",
+                                                                "HI-SLOP-006",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  true
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-20",
+                         "synthetic":  true,
+                         "kind":  "adversarial",
+                         "title":  "Clever but voice-wrong",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "headline_candidate":  "Disruption Is the New Classroom Operating System"
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-EVAL-006",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  true
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-21",
+                         "synthetic":  true,
+                         "kind":  "adversarial",
+                         "title":  "SEO distortion",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "search landing page",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "headline_candidate":  "Community School Community School School Discussion Community School"
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-SLOP-005",
+                                                                "HI-EVAL-007",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  true
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-22",
+                         "synthetic":  true,
+                         "kind":  "adversarial",
+                         "title":  "Vague mystery",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "headline_candidate":  "This Is What Happened Next",
+                                       "source_summary":  "The story\u0027s subject is a named discussion routine."
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "reject",
+                                      "expected_rule_ids":  [
+                                                                "HI-SLOP-001",
+                                                                "HI-EVAL-007",
+                                                                "HI-SEL-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "reject"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "reject"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  true
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-23",
+                         "synthetic":  true,
+                         "kind":  "negative_control",
+                         "title":  "Required title phrase",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "the supplied title uses the phrase The Future of Learning as an intentional title",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-003",
+                                                                "HI-EVAL-006"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+                                                                     "HI-SLOP-006"
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "accept_contextual_term"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-24",
+                         "synthetic":  true,
+                         "kind":  "negative_control",
+                         "title":  "Accurate question",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "explain",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "headline_candidate":  "Can a Classroom Routine Change Who Gets Heard?"
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-EVAL-001",
+                                                                "HI-EVAL-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+                                                                     "HI-SLOP-004"
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "accept_question"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-25",
+                         "synthetic":  true,
+                         "kind":  "negative_control",
+                         "title":  "Supported quote with strong word",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article",
+                                       "voice":  "quoted source contains the word always and the quote must be preserved",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-003",
+                                                                "HI-EVAL-006"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+                                                                     "HI-SLOP-003"
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "accept_supported_quote"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-26",
+                         "synthetic":  true,
+                         "kind":  "negative_control",
+                         "title":  "Abstract title with subtitle",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article with a verified subtitle",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "subtitle_available":  true
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready_with_conditions",
+                                      "expected_rule_ids":  [
+                                                                "HI-EVAL-007"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+                                                                     "HI-SLOP-001"
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "use_subtitle_hook"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready_with_conditions"
+                                                            ],
+                                      "required_decision_hooks":  [
+                                                                      "HI-DH-003"
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-27",
+                         "synthetic":  true,
+                         "kind":  "integration",
+                         "title":  "Research headline with qualifiers and SEO",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "web article plus search title",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "subtitle_available":  true,
+                                       "seo_terms":  [
+                                                         "student discussion"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready_with_conditions",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-001",
+                                                                "HI-INPUT-002",
+                                                                "HI-INPUT-004",
+                                                                "HI-EVAL-001",
+                                                                "HI-EVAL-002",
+                                                                "HI-EVAL-003",
+                                                                "HI-EVAL-005",
+                                                                "HI-SLOP-005",
+                                                                "HI-DIV-001",
+                                                                "HI-OUT-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "screen",
+                                                               "record_hooks"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready_with_conditions"
+                                                            ],
+                                      "required_decision_hooks":  [
+                                                                      "HI-DH-001",
+                                                                      "HI-DH-002",
+                                                                      "HI-DH-003"
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-28",
+                         "synthetic":  true,
+                         "kind":  "integration",
+                         "title":  "Newsletter voice and unknown length",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "email subject line; length limit unverified",
+                                       "voice":  "direct, dry, slightly funny",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready_with_conditions",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-003",
+                                                                "HI-INPUT-004",
+                                                                "HI-EVAL-006",
+                                                                "HI-DIV-001",
+                                                                "HI-OUT-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "screen",
+                                                               "record_hooks"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready_with_conditions"
+                                                            ],
+                                      "required_decision_hooks":  [
+                                                                      "HI-DH-001",
+                                                                      "HI-DH-005"
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-29",
+                         "synthetic":  true,
+                         "kind":  "integration",
+                         "title":  "Localization and accessibility hold",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "translated social card",
+                                       "voice":  "plain, observant, skeptical of grand claims",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "localization":  "active",
+                                       "accessibility":  "active",
+                                       "headline_candidate":  "A visual pun that does not translate"
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "hold",
+                                      "expected_rule_ids":  [
+                                                                "HI-OUT-002"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "hold_for_review"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "hold"
+                                                            ],
+                                      "required_decision_hooks":  [
+                                                                      "HI-DH-007",
+                                                                      "HI-DH-008"
+                                                                  ],
+                                      "expected_routes":  [
+
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     },
+                     {
+                         "fixture_id":  "HI-30",
+                         "synthetic":  true,
+                         "kind":  "integration",
+                         "title":  "Protected technical term handoff",
+                         "input":  {
+                                       "brief":  "A reported essay explains how a community school changed its discussion routine. Evidence supports a modest participation improvement.",
+                                       "audience":  "district leaders",
+                                       "purpose":  "inform",
+                                       "genre":  "reported essay",
+                                       "medium":  "technical report",
+                                       "voice":  "formal",
+                                       "preserved":  [
+                                                         "community school",
+                                                         "modest improvement"
+                                                     ],
+                                       "protected_technical_terms":  [
+                                                                         "structured dialogue protocol"
+                                                                     ]
+                                   },
+                         "gold":  {
+                                      "expected_release_status":  "ready",
+                                      "expected_rule_ids":  [
+                                                                "HI-INPUT-003",
+                                                                "HI-EVAL-006",
+                                                                "HI-EVAL-007",
+                                                                "HI-OUT-001"
+                                                            ],
+                                      "must_not_emit_rule_ids":  [
+
+                                                                 ],
+                                      "expected_actions":  [
+                                                               "handoff_protected_term"
+                                                           ],
+                                      "expected_statuses":  [
+                                                                "ready"
+                                                            ],
+                                      "required_decision_hooks":  [
+
+                                                                  ],
+                                      "expected_routes":  [
+                                                              "technical_editing_handoff"
+                                                          ],
+                                      "zero_tolerance":  false
+                                  }
+                     }
+                 ]
+}

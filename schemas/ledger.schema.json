@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"mwm://headline-ideation/schemas/ledger",
+  "title":"Headline finding ledger","type":"object","additionalProperties":false,
+  "required":["run_id","findings","rejected_option_ids","open_hook_ids","status"],
+  "properties":{
+    "run_id":{"type":"string"},"findings":{"type":"array","items":{"$ref":"mwm://headline-ideation/schemas/finding"}},
+    "rejected_option_ids":{"type":"array","items":{"type":"string"}},
+    "open_hook_ids":{"type":"array","items":{"type":"string"}},
+    "status":{"enum":["ready","ready_with_conditions","needs_input","hold"]}
+  }
+}
